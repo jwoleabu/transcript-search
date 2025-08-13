@@ -1,13 +1,10 @@
-import { TranscriptParser } from './responder'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const parser = new TranscriptParser
-
   const onClick = async () =>{
-    parser.hello()
+    console.log('apple')
   }
   // const [count, setCount] = useState(0)
 

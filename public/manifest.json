@@ -12,11 +12,12 @@
     "default_popup": "popup/index.html"
   },
   "web_accessible_resources": [
-      "assets/*"
+      "assets/*",
+      "content-scripts/*"
   ],
   "content_scripts": [
     {
-      "run_at": "document_idle",
+      "run_at": "document_start",
       "matches": ["https://*.youtube.com/*"],
       "exclude_matches": ["https://accounts.youtube.com/RotateCookiesPage*"],
       "js": ["assets/content.js"]
